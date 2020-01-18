@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "pretty": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "typeRoots": ["typings", "node_modules/@types"],
+    "types": ["socket-controllers"],
+    "paths": {
+      "@app/*": ["./src/*"],
+      "@typings/*": ["./typings/*"]
+    }
+  },
+  "include": ["./src/**/*.ts", "./typings/**/*.d.ts"]
+}
